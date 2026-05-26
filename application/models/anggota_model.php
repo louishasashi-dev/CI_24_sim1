@@ -2,7 +2,7 @@
 class Anggota_model extends CI_Model {
 
     private $table = 'anggota';
-    private $primaryKey = 'id_anggota';
+    private $primaryKey = 'anggota_id';
 
     public function get_all()
     {

@@ -3,7 +3,7 @@
 
     <div class="card shadow">
         <div class="card-body">
-            <form method="post" action="<?= site_url('anggota/update/'.$anggota->id_anggota); ?>">
+            <form method="post" action="<?= site_url('anggota/update/'.$anggota->anggota_id); ?>">
                 <div class="form-group">
                     <label>Nomor Anggota</label>
                     <input type="text" class="form-control" value="<?= $anggota->nomor_anggota; ?>" disabled>
@@ -32,7 +32,8 @@
 
                 <div class="form-group">
                     <label>Tanggal Daftar</label>
-                    <input type="date" name="tanggal_daftar" class="form-control" value="<?= $anggota->tanggal_daftar; ?>" required>
+                    <input type="date" name="tanggal_daftar" class="form-control"
+                        value="<?= $anggota->tanggal_daftar; ?>" required>
                 </div>
 
                 <button type="submit" class="btn btn-primary">

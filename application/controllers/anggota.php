@@ -9,6 +9,10 @@ class Anggota extends CI_Controller {
         $this->load->model('anggota_model');
         $this->load->library(['form_validation', 'session']);
         $this->load->helper('url');
+
+        if (!$this->session->userdata('login')){
+            redirect('login');
+        }
     }
 
     public function index()
